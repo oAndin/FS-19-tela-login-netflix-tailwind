@@ -8,19 +8,12 @@
     <link rel="stylesheet" href="./css/tailwind.css">
 </head>
 
-<body class="h-screen w-screen static">
-    <!--     
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; -->
+<body class="h-screen w-screen">
+    
     <div 
-    class="w-screen h-screen bg-no-repeat bg-center"
-    style="background-image: url(./img/BR-pt-20230529-popsignuptwoweeks-perspective_alpha_website_medium.jpg);"
-    id="fundo"></div>
+    class="w-full h-full absolute bg-left-top top-0 left-0 bg-no-repeat bg-cover -z-1">
+    <img src="./img/BR-pt-20230529-popsignuptwoweeks-perspective_alpha_website_medium.jpg" alt="">
+    </div>
     <main class="h-screen w-screen flex flex-col items-center justify-center">
         <img src="./img/Logonetflix.png" class="w-40" alt="Logo">
         <div class="w-quadrado h-retangulo bg-black">
@@ -28,6 +21,13 @@
         </div>
     </main>
 </body>
-
+<!--     
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; -->
 </html>
 <!DOCTYPE html>
