@@ -16,12 +16,22 @@
         <img class="w-64 p-10 z-10" src="./Images/Logonetflix.png" alt="Logo">
         <div class="flex justify-center content-center" id="center">
             <div class="container bg-blackOppa w-4/12 h-96 flex flex-col">
-                <form class="">
-                    <h1 class="text-white text-4xl font-medium m-12">Entrar</h1>
-                    <input class="w-full h-10 m-12 bg-grayBackgroundColor" type="text" required>
-                    <input class="w-full h-10 m-12 bg-grayBackgroundColor" type="text" required>
-                    <button class="w-full h-10 m-12 bg-redPrimary text-white" type="submit">Entrar</button>
+                <form class="p-12">
+                    <h1 class="text-white text-4xl font-medium">Entrar</h1>
+                    <input class="w-full h-12 p-3 mt-7 bg-grayBackgroundColor rounded" type="text"
+                        placeholder="Email ou número de telefone" required>
+                    <input class="w-full h-12 p-3 mt-4 bg-grayBackgroundColor rounded" type="password"
+                        placeholder="Senha" required>
+                    <button class="w-full h-12 mt-8 bg-redPrimary text-white rounded" type="submit">Entrar</button>
+                    <div class="w-full h-1 mt-4 flex-wrap flex content-center justify-between  " id="lembre-ajuda">
+                        <div class="flex" id="lado-lado">
+                            <input class="" type="checkbox" name="" id="">
+                            <p class="text-white ml-1">Lembre-se de mim</p>
+                        </div>
+                        <p class="text-white"><a href="#">Precisa de ajuda?</a></p>
+                    </div>
                 </form>
+                <!-- <h1 style="background-color: #333333;">TESTE DE COR</h1> -->
             </div>
         </div>
     </main>
@@ -33,9 +43,9 @@
         theme: {
             extend: {
                 colors: {
-                    blackOppa: '#00000090',
+                    blackOppa: '#00000099',
                     redPrimary: '#E50914',
-                    grayBackgroundColor:'#5a5a5a',
+                    grayBackgroundColor: '#333333',
                     grayText: ''
                 }
             }
