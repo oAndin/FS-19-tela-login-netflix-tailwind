@@ -9,26 +9,34 @@
 
 <body class="h-screen w-screen">
     <main>
-
+        <div class="w-screen h-screen bg-cover bg-no-repeat -z-10 absolute" id="background-picture"
+            style="background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/73334647-ad51-42a9-b07b-93298cc2a8e1/6231a476-40df-4892-912b-63bc4e0d9601/BR-pt-20230605-popsignuptwoweeks-perspective_alpha_website_medium.jpg);">
+        </div>
+        <div class="bg-black w-screen h-screen bg-cover -z-10 absolute opacity-50" id="effect"></div>
+        <img class="w-64 p-10 z-10" src="./Images/Logonetflix.png" alt="Logo">
+        <div class="flex justify-center content-center" id="center">
+            <div class="container bg-blackOppa w-4/12 h-96 flex flex-col">
+                <form class="">
+                    <h1 class="text-white text-4xl font-medium m-12">Entrar</h1>
+                    <input class="w-full h-10 m-12 bg-grayBackgroundColor" type="text" required>
+                    <input class="w-full h-10 m-12 bg-grayBackgroundColor" type="text" required>
+                    <button class="w-full h-10 m-12 bg-redPrimary text-white" type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 
-<!--     
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
     tailwind.config = {
         theme: {
             extend: {
                 colors: {
-
-
+                    blackOppa: '#00000090',
+                    redPrimary: '#E50914',
+                    grayBackgroundColor:'#5a5a5a',
+                    grayText: ''
                 }
             }
         }
