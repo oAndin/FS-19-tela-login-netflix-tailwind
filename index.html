@@ -15,8 +15,8 @@
         <div class="bg-black w-screen h-screen bg-cover -z-10 absolute opacity-50" id="effect"></div>
         <img class="w-64 p-10 z-10" src="./Images/Logonetflix.png" alt="Logo">
         <div class="flex justify-center content-center" id="center">
-            <div class="container bg-blackEffect w-23 mb-24 h-full flex flex-col">
-                <form class="p-14">
+            <div class="container bg-blackEffect w-mdWidth m-24 h-mdHeigh flex flex-col">
+                <form class="">
                     <h1 class="text-white text-4xl font-medium">Entrar</h1>
                     <input class="w-full h-12 p-3 mt-7 bg-grayBackgroundColor rounded" type="text"
                         placeholder="Email ou número de telefone" required>
@@ -43,7 +43,14 @@
             </div>
         </div>
         <footer class="w-screen h-full bottom-0 bg-blackEffect">
-            <p class="text-easyGray">Dúvidas? <a href="#">Ligue 0800 591 8942</a></p>
+            <p class="text-easyGray">Dúvidas? <a href="#" class="hover:underline">Ligue 0800 591 8942</a></p>
+            <p><a href="#" class="text-easyGray hover:underline">Perguntas frequentes</a></p>
+            <p><a href="#" class="text-easyGray hover:underline">Preferências de cookies</a></p>
+            <p><a href="#" class="text-easyGray hover:underline">Central de ajuda</a></p>
+            <p><a href="#" class="text-easyGray hover:underline">Informações corporativas</a></p>
+            <p><a href="#" class="text-easyGray hover:underline">Termos de uso</a></p>
+            <p><a href="#" class="text-easyGray hover:underline">Privacidade</a></p>
+            <button>Português</button>
         </footer>
     </main>
 </body>
@@ -53,8 +60,11 @@
     tailwind.config = {
         theme: {
             extend: {
+                height: {
+                    mdHeight: '560px'
+                },
                 width: {
-                    '23': '23%'
+                    mdWidth: '314px',
                 },
                 colors: {
                     blackEffect: 'rgb(0 0 0 / 75%)',
