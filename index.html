@@ -14,8 +14,8 @@
         </div>
         <div class="bg-black w-screen h-screen bg-cover -z-10 absolute opacity-50" id="effect"></div>
         <img class="w-64 p-10 z-10" src="./Images/Logonetflix.png" alt="Logo">
-        <div class="flex justify-center content-center" id="center">
-            <div class="container bg-blackEffect w-mdWidth m-24 h-mdHeigh flex flex-col">
+        <div class="flex justify-center citems-center" id="center">
+            <div class="container bg-blackEffect h-full flex flex-col">
                 <form class="">
                     <h1 class="text-white text-4xl font-medium">Entrar</h1>
                     <input class="w-full h-12 p-3 mt-7 bg-grayBackgroundColor rounded" type="text"
@@ -36,36 +36,33 @@
                         <p class="text-white ml-1"><a href="#" class="hover:underline">Assine agora.</a></p>
                     </div>
                     <div class="mt-2 flex text-easyGray" id="lado-a-lado-3">
-                        <p class="text-easyGray text-sm mb-24">Esta página é protegida pelo Google reCAPTCHA para garantir que
+                        <p class="text-easyGray text-sm mb-24">Esta página é protegida pelo Google reCAPTCHA para
+                            garantir que
                             você não é um robô.<a class="text-blue-500 hover:underline" href="#"> Saiba mais.</a></p>
                     </div>
                 </form>
             </div>
         </div>
-        <footer class="w-screen h-full bottom-0 bg-blackEffect">
-            <p class="text-easyGray">Dúvidas? <a href="#" class="hover:underline">Ligue 0800 591 8942</a></p>
-            <p><a href="#" class="text-easyGray hover:underline">Perguntas frequentes</a></p>
-            <p><a href="#" class="text-easyGray hover:underline">Preferências de cookies</a></p>
-            <p><a href="#" class="text-easyGray hover:underline">Central de ajuda</a></p>
-            <p><a href="#" class="text-easyGray hover:underline">Informações corporativas</a></p>
-            <p><a href="#" class="text-easyGray hover:underline">Termos de uso</a></p>
-            <p><a href="#" class="text-easyGray hover:underline">Privacidade</a></p>
-            <button>Português</button>
+        <footer class="container mx-auto w-screen h-full bottom-0 bg-blackEffect">
+            <p class="text-easyGray mb-12">Dúvidas? <a href="#" class="hover:underline">Ligue 0800 591 8942</a></p>
+            <div id="wrap" class="flex flex-wrap">
+                <p><a href="#" class="text-easyGray hover:underline">Perguntas frequentes</a></p>
+                <p><a href="#" class="text-easyGray hover:underline">Preferências de cookies</a></p>
+                <p><a href="#" class="text-easyGray hover:underline">Central de ajuda</a></p>
+                <p><a href="#" class="text-easyGray hover:underline">Informações corporativas</a></p>
+                <p><a href="#" class="text-easyGray hover:underline">Termos de uso</a></p>
+                <p><a href="#" class="text-easyGray hover:underline">Privacidade</a></p>
+            </div>
+            <button class="bg-white">Português</button>
         </footer>
     </main>
 </body>
-
+<script src="https://kit.fontawesome.com/1887723c23.js" crossorigin="anonymous"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
     tailwind.config = {
         theme: {
             extend: {
-                height: {
-                    mdHeight: '560px'
-                },
-                width: {
-                    mdWidth: '314px',
-                },
                 colors: {
                     blackEffect: 'rgb(0 0 0 / 75%)',
                     blackOppa: '#0C0C0C',
