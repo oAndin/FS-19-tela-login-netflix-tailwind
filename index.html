@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1887723c23.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="" style="font-family: Arial, Helvetica, sans-serif;">
     <main class="w-screen h-screen bg-black flex flex-col">
         <img class="w-1/5 ml-2 mt-4 mb-7" src="./Images/Logonetflix.png" alt="Logo">
-        <div id="container" class="md:container mx-5">    
+        <div id="container" class="md:container mx-5 mb-32">    
             <h1 class="text-white mb-8 text-3xl font-bold">Entrar</h1>
             <input type="text" class="w-full h-12 bg-grayBackgroundColor mb-4 p-5 rounded text-white text-xs" placeholder="Email ou número de telefone" required>
             <input type="password" class="w-full h-12 bg-grayBackgroundColor mb-10 p-5 rounded text-white text-xs" placeholder="Senha" required>
-            <button class="bg-redPrimary text-white w-full h-12 rounded mb-3">entrar</button>
+            <button class="bg-redPrimary text-white w-full h-12 rounded mb-3">Entrar</button>
             <div id="lembre-ajuda" class="text-easyGray flex justify-between mb-8 text-xs">
                 <div id="lembre-se">
                     <input type="checkbox" name="" id="lembre">
@@ -26,8 +27,21 @@
             <p class="text-easyGray mb-2">Novo por aqui? <a href="#" class="text-white">Assine agora.</a></p>
             <p class="text-easyGray text-xs">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#" class="text-blue-500">Saiba mais.</a></p>
         </div>
-        <footer class="md:container">
-            
+        <hr class="0">
+        <footer class="mx-5 my-6">
+            <p class="text-easyGray mb-4">Dúvidas? Ligue 0800 591 8942</p>
+            <div id="links" class="flex flex-wrap border-2 border-white gap-4 text-sm">
+                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Perguntas frequentes</a></p>
+                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Central de ajuda</a></p>
+                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Termos de uso</a></p>
+                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Privacidade</a></p>
+                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Informações corporativas</a></p>
+                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Preferências de cookies</a></p>
+            </div>
+            <button class="w-full h-12 border-2 border-easyGray text-easyGray">
+                <i class="fa-solid fa-globe" style="color: #737373;"></i>
+                Português 
+               <i class="fa-solid fa-angle-down" style="color: #737373;"></i></button> 
         </footer>
     <script>
         tailwind.config = {
