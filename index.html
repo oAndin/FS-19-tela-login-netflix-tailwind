@@ -12,7 +12,7 @@
 <body class="" style="font-family: Arial, Helvetica, sans-serif;">
     <main class="w-screen h-screen bg-black flex flex-col">
         <img class="w-1/5 ml-2 mt-4 mb-7" src="./Images/Logonetflix.png" alt="Logo">
-        <div id="container" class="md:container mx-5 mb-32">    
+        <div id="container" class="mx-5 mb-32">    
             <h1 class="text-white mb-8 text-3xl font-bold">Entrar</h1>
             <input type="text" class="w-full h-12 bg-grayBackgroundColor mb-4 p-5 rounded text-white text-xs" placeholder="Email ou número de telefone" required>
             <input type="password" class="w-full h-12 bg-grayBackgroundColor mb-10 p-5 rounded text-white text-xs" placeholder="Senha" required>
@@ -28,17 +28,29 @@
             <p class="text-easyGray text-xs">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#" class="text-blue-500">Saiba mais.</a></p>
         </div>
         <hr class="0">
-        <footer class="mx-5 my-6">
-            <p class="text-easyGray mb-4">Dúvidas? Ligue 0800 591 8942</p>
-            <div id="links" class="flex flex-wrap border-2 border-white gap-4 text-sm">
-                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Perguntas frequentes</a></p>
-                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Central de ajuda</a></p>
-                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Termos de uso</a></p>
-                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Privacidade</a></p>
-                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Informações corporativas</a></p>
-                    <p><a href="#" class="text-easyGray hover:underline border-2 border-white">Preferências de cookies</a></p>
-            </div>
-            <button class="w-full h-12 border-2 border-easyGray text-easyGray">
+        <footer class="mx-5 mt-6">
+            <p class="text-easyGray mb-5">Dúvidas? Ligue 0800 591 8942</p>
+            <ul class="flex flex-wrap text-sm">
+                <li  class="text-easyGray hover:underline w-1/2 list-outside mb-3">
+                    <p><a href="#">Perguntas frequentes</a></p>
+                </li>
+                <li  class="text-easyGray hover:underline w-1/2 list-outside">
+                    <p><a href="#">Central de ajuda</a></p>
+                </li>
+                <li  class="text-easyGray hover:underline w-1/2 list-outside mb-3">
+                    <p><a href="#">Termos de uso</a></p>
+                </li>
+                <li  class="text-easyGray hover:underline w-1/2 list-outside">
+                    <p><a href="#">Privacidade</a></p>
+                </li>
+                <li  class="text-easyGray hover:underline w-1/2 list-outside mb-3">
+                    <p><a href="#">Preferências de cookies</a></p>
+                </li>
+                <li  class="text-easyGray hover:underline w-1/2 list-outside">
+                    <p><a href="#">Informações corporativas</a></p>
+                </li>
+            </ul>
+            <button class="flex items-center justify-center mt-4 h-12 border-2 p-3 gap-2 border-easyGray text-easyGray text-sm rounded">
                 <i class="fa-solid fa-globe" style="color: #737373;"></i>
                 Português 
                <i class="fa-solid fa-angle-down" style="color: #737373;"></i></button> 
