@@ -9,13 +9,19 @@
     <script src="https://kit.fontawesome.com/1887723c23.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="" style="font-family: Arial, Helvetica, sans-serif;">
-    <main class="w-screen h-screen bg-black flex flex-col">
-        <img class="w-1/5 ml-2 mt-4 mb-7" src="./Images/Logonetflix.png" alt="Logo">
-        <div id="container" class="mx-5 mb-32">    
+<body class="w-screen h-screen bg-black" style="font-family: Arial, Helvetica, sans-serif;">
+    <div id="backBlackEffect" class="sm:bg-blackEffect -z-10 hidden md:block"></div>
+    <div id="backImage" class="sm:w-screen h-screen absolute bg-center bg-center -z-20 hidden bg-cover md:block"
+        style="background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/73334647-ad51-42a9-b07b-93298cc2a8e1/6231a476-40df-4892-912b-63bc4e0d9601/BR-pt-20230605-popsignuptwoweeks-perspective_alpha_website_medium.jpg);">
+    </div>
+    <img class="w-1/5 ml-2 mb-7" src="./Images/Logonetflix.png" alt="Logo">
+    <main class=" flex flex-col md:items-center justify-center">
+        <div id="container" class="mx-5 mb-32 md:w-2/5 bg-blackEffect p-20 h-1/3">
             <h1 class="text-white mb-8 text-3xl font-bold">Entrar</h1>
-            <input type="text" class="w-full h-12 bg-grayBackgroundColor mb-4 p-5 rounded text-white text-xs" placeholder="Email ou número de telefone" required>
-            <input type="password" class="w-full h-12 bg-grayBackgroundColor mb-10 p-5 rounded text-white text-xs" placeholder="Senha" required>
+            <input type="text" class="w-full h-12 bg-grayBackgroundColor mb-4 p-5 rounded text-white text-xs"
+                placeholder="Email ou número de telefone" required>
+            <input type="password" class="w-full h-12 bg-grayBackgroundColor mb-10 p-5 rounded text-white text-xs"
+                placeholder="Senha" required>
             <button class="bg-redPrimary text-white w-full h-12 rounded mb-3">Entrar</button>
             <div id="lembre-ajuda" class="text-easyGray flex justify-between mb-8 text-xs">
                 <div id="lembre-se">
@@ -25,36 +31,40 @@
                 <a href="#">Precisa de ajuda?</a>
             </div>
             <p class="text-easyGray mb-2">Novo por aqui? <a href="#" class="text-white">Assine agora.</a></p>
-            <p class="text-easyGray text-xs">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#" class="text-blue-500">Saiba mais.</a></p>
+            <p class="text-easyGray text-xs">Esta página é protegida pelo Google reCAPTCHA para garantir que você
+                não é um robô. <a href="#" class="text-blue-500">Saiba mais.</a></p>
         </div>
-        <hr class="0">
-        <footer class="mx-5 mt-6">
-            <p class="text-easyGray mb-5">Dúvidas? Ligue 0800 591 8942</p>
-            <ul class="flex flex-wrap text-sm">
-                <li  class="text-easyGray hover:underline w-1/2 list-outside mb-3">
-                    <p><a href="#">Perguntas frequentes</a></p>
-                </li>
-                <li  class="text-easyGray hover:underline w-1/2 list-outside">
-                    <p><a href="#">Central de ajuda</a></p>
-                </li>
-                <li  class="text-easyGray hover:underline w-1/2 list-outside mb-3">
-                    <p><a href="#">Termos de uso</a></p>
-                </li>
-                <li  class="text-easyGray hover:underline w-1/2 list-outside">
-                    <p><a href="#">Privacidade</a></p>
-                </li>
-                <li  class="text-easyGray hover:underline w-1/2 list-outside mb-3">
-                    <p><a href="#">Preferências de cookies</a></p>
-                </li>
-                <li  class="text-easyGray hover:underline w-1/2 list-outside">
-                    <p><a href="#">Informações corporativas</a></p>
-                </li>
-            </ul>
-            <button class="flex items-center justify-center mt-4 h-12 border-2 p-3 gap-2 border-easyGray text-easyGray text-sm rounded">
-                <i class="fa-solid fa-globe" style="color: #737373;"></i>
-                Português 
-               <i class="fa-solid fa-angle-down" style="color: #737373;"></i></button> 
-        </footer>
+
+    </main>
+    <hr class="md:hidden">
+    <footer class="mx-5 mt-6 md:mx-0 bg-blackEffect p-8 absolute b-0 l-0 w-screen">
+        <p class="text-easyGray mb-5">Dúvidas? Ligue 0800 591 8942</p>
+        <ul class="flex flex-wrap text-sm">
+            <li class="text-easyGray hover:underline w-1/2 list-outside mb-3 md:w-2/6">
+                <p><a href="#">Perguntas frequentes</a></p>
+            </li>
+            <li class="text-easyGray hover:underline w-1/2 list-outside md:w-2/6">
+                <p><a href="#">Central de ajuda</a></p>
+            </li>
+            <li class="text-easyGray hover:underline w-1/2 list-outside mb-3 md:w-2/6">
+                <p><a href="#">Termos de uso</a></p>
+            </li>
+            <li class="text-easyGray hover:underline w-1/2 list-outside md:w-2/6">
+                <p><a href="#">Privacidade</a></p>
+            </li>
+            <li class="text-easyGray hover:underline w-1/2 list-outside mb-3 md:w-2/6">
+                <p><a href="#">Preferências de cookies</a></p>
+            </li>
+            <li class="text-easyGray hover:underline w-1/2 list-outside md:w-2/6">
+                <p><a href="#">Informações corporativas</a></p>
+            </li>
+        </ul>
+        <button
+            class="flex items-center justify-center mt-4 h-12 border-2 p-3 gap-2 border-easyGray text-easyGray text-sm rounded">
+            <i class="fa-solid fa-globe" style="color: #737373;"></i>
+            Português
+            <i class="fa-solid fa-angle-down" style="color: #737373;"></i></button>
+    </footer>
     <script>
         tailwind.config = {
             theme: {
