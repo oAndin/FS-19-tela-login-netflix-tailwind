@@ -10,13 +10,13 @@
 </head>
 
 <body class="w-screen h-screen bg-black" style="font-family: Arial, Helvetica, sans-serif;">
-    <div id="backBlackEffect" class="sm:bg-blackEffect -z-10 hidden md:block"></div>
+    <div id="backBlackEffect" class="md:w-screen md:h-screen md:bg-blackEffect md:absolute md:-z-10 md:block"></div>
     <div id="backImage" class="sm:w-screen h-screen absolute bg-center bg-center -z-20 hidden bg-cover md:block"
         style="background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/73334647-ad51-42a9-b07b-93298cc2a8e1/6231a476-40df-4892-912b-63bc4e0d9601/BR-pt-20230605-popsignuptwoweeks-perspective_alpha_website_medium.jpg);">
     </div>
-    <img class="w-1/5 ml-2 mb-7" src="./Images/Logonetflix.png" alt="Logo">
+    <img class="w-1/5 mt-4 ml-2 mb-7 md:mt-0 md:p-6" src="./Images/Logonetflix.png" alt="Logo">
     <main class=" flex flex-col md:items-center justify-center">
-        <div id="container" class="mx-5 mb-32 md:w-2/5 bg-blackEffect p-20 h-1/3">
+        <div id="container" class="mx-5 mb-32 md:w-[35%] md:bg-blackEffect md:p-20 md:h-1/3 md:mb-20">
             <h1 class="text-white mb-8 text-3xl font-bold">Entrar</h1>
             <input type="text" class="w-full h-12 bg-grayBackgroundColor mb-4 p-5 rounded text-white text-xs"
                 placeholder="Email ou número de telefone" required>
@@ -37,7 +37,8 @@
 
     </main>
     <hr class="md:hidden">
-    <footer class="mx-5 mt-6 md:mx-0 bg-blackEffect p-8 absolute b-0 l-0 w-screen">
+    <footer
+        class="mx-5 mt-6 md:m-0 md:w-screen md:bg-blackEffect md:px-32 md:pb-20 md:pt-10 md:absolute md:bottom-0 md:start-0 z-1">
         <p class="text-easyGray mb-5">Dúvidas? Ligue 0800 591 8942</p>
         <ul class="flex flex-wrap text-sm">
             <li class="text-easyGray hover:underline w-1/2 list-outside mb-3 md:w-2/6">
@@ -59,11 +60,15 @@
                 <p><a href="#">Informações corporativas</a></p>
             </li>
         </ul>
-        <button
-            class="flex items-center justify-center mt-4 h-12 border-2 p-3 gap-2 border-easyGray text-easyGray text-sm rounded">
+        <select id="idioma" class="px-4 py-2 text-easyGray bg-black border-2 border-easyGray" value="">
             <i class="fa-solid fa-globe" style="color: #737373;"></i>
-            Português
-            <i class="fa-solid fa-angle-down" style="color: #737373;"></i></button>
+            <option value="" class="">
+                Português
+            </option>
+            <option value="" class="text-easyGray bg-blackEffect">
+                English
+            </option>
+        </select>
     </footer>
     <script>
         tailwind.config = {

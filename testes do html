@@ -12,7 +12,7 @@
     <main>
         <div class="w-screen h-screen bg-cover bg-no-repeat -z-10 absolute" id="background-picture"
             style="background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/73334647-ad51-42a9-b07b-93298cc2a8e1/6231a476-40df-4892-912b-63bc4e0d9601/BR-pt-20230605-popsignuptwoweeks-perspective_alpha_website_medium.jpg);">
-        </div>
+            </div>
         <div class="bg-black w-screen h-screen bg-cover -z-10 absolute opacity-50" id="effect"></div>
         <img class="w-64 p-10 z-10" src="./Images/Logonetflix.png" alt="Logo">
         <div class="flex justify-center citems-center" id="center">
